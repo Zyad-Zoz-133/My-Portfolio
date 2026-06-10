@@ -1,0 +1,139 @@
+:root{
+      --main-bg : #001116;
+      --card-bg: #00161d;
+      --titles : #007EA7;
+      --border : #003459;
+      --text : #FFFFFF;
+}
+
+
+.all {
+      max-width: 600px;
+      width: 100%;
+      margin: 20px auto;
+      background-color: var(--card-bg);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      border-radius: 15px;
+      border: 2px solid var(--titles);
+}
+
+body{
+      background-color: var(--main-bg);
+}
+
+
+
+.icons {
+      display: inline-block;
+      padding: 10px;
+      align-items: center;
+      margin-bottom: -20px;
+      margin-left: auto;
+      margin-right: 40px;
+      padding-top: 10px;
+      transform: translateY(8px);
+}
+
+.icons a{
+      margin-top: 10px;
+      margin-bottom: 0;
+      margin-right: 20px;
+}
+
+
+
+header{
+      padding: 5px 5px 0 10px;
+      max-width: 1000px;
+      /* padding: auto; */
+      /* border: 1px solid red; */
+}
+
+header p{
+      font-size:  x-large;
+      color: var(--titles);
+      transition: fill 0.3 ease;
+      display: inline;
+}
+
+.icons a svg,
+.icons a svg g,
+.icons a svg path {
+      fill: var(--titles) !important;
+      transition: fill 0.3 ease;
+}
+
+.icons a svg,
+.icons a svg g,
+.icons a:hover svg path 
+ {
+      fill: #00a8ff !important;
+}
+
+svg{
+      width: 30px;
+      height: 30px;
+}
+
+.icons a{
+      margin: 5px;
+      text-decoration: none;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+header p .special {
+      font-size: large;
+}
+
+
+.head{
+      max-width: 1000px;
+      width: 100%;
+      margin:10px 05px 0 0;
+      padding: 10px;
+      padding-top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      /* border: 1px solid white; */
+}
+
+header .title:hover{
+      cursor: pointer;
+      color: #00a8ff;
+}
+
+hr{
+      border: none;
+      border-top: 3px solid var(--titles);
+      margin: 20px 0;
+      width: 100%;
+      opacity: 0.5;
+}
+
+.about-me{
+      border: 3px var(--border) solid;
+      padding: 30px;
+      margin: 25px;
+      margin-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 15px;
+      background-color: #001322;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.about-me ul {
+      color: var(--text);
+      list-style: none;
+      line-height: 1.3;
+      letter-spacing: 1.1;
+}
+
+.about-me span {
+      color: var(--titles);
+      font-size: x-large ;
+}
