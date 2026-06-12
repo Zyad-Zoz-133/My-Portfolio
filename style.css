@@ -115,7 +115,7 @@ hr{
       opacity: 0.5;
 }
 
-.about-me , .skills , .right-side{
+.about-me , .skills , .right-side , .card{
       border: 3px var(--border) solid;
       padding: 30px;
       margin: 25px;
@@ -193,5 +193,13 @@ hr{
       fill: var(--border);
 }
 
+.text{
+      color: var(--text);
+      letter-spacing: 1.5;
+      font-size:large;
+}
 
-
+.card span{
+      display: block;
+      padding: 10px;
+}
