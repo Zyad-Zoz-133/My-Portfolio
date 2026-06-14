@@ -48,8 +48,6 @@ body{
 header{
       padding: 5px 5px 0 10px;
       max-width: 1000px;
-      /* padding: auto; */
-      /* border: 1px solid red; */
 }
 
 header p{
@@ -99,11 +97,11 @@ header p .special {
       align-items: center;
       justify-content: space-between;
       box-sizing: border-box;
-      /* border: 1px solid white; */
 }
 
-header .title:hover{
-      cursor: pointer;
+header .title:hover ,
+.ps-title
+:hover{
       color: #00a8ff;
 }
 
@@ -129,7 +127,7 @@ hr{
 
 .about-me:hover,
 .skills:hover,
-.right-side:hover {
+.right-side,.card:hover {
       background-color: #00192a;
 }
 
@@ -180,7 +178,11 @@ hr{
 .rock{
       width: 30px;
       height: 30px;
-      fill: var(--border);
+      fill: var(--titles);
+}
+
+.rock:hover{
+      fill: #00a8ff;
 }
 
 .game{
@@ -199,7 +201,51 @@ hr{
       font-size:large;
 }
 
-.card span{
+.card .title{
       display: block;
-      padding: 10px;
+      margin: 10px;
+}
+
+.messi{
+      width: 300px;
+      height: 200px;
+      object-fit:contain;
+}
+
+.card a{
+      color: var(--border);
+      display: inline;
+}
+
+.link {
+      color: var(--text);
+}
+
+.text .note {
+      color: var(--border);
+      font-size: x-large;
+}
+
+footer p{
+      color: var(--text);
+      padding: 10px 10px;
+      padding-top: 0;
+}
+
+.github-btn {
+      display: inline-block;
+      background-color: var(--border);
+      color: #ffffff;
+      padding: 14px 24px;
+      margin: 10px;
+      margin-left: 30px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+      background-color: #00192a;
 }
