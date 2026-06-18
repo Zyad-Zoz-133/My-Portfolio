@@ -1,11 +1,22 @@
-:root{
-      --main-bg : #001116;
+:root {
+      --main-bg: #001116;
       --card-bg: #00161d;
-      --titles : #007EA7;
-      --border : #003459;
-      --text : #FFFFFF;
+      --titles: #007EA7;
+      --border: #003459;
+      --text: #FFFFFF;
 }
 
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+
+body {
+      background-color: var(--main-bg);
+      font-family: sans-serif;
+      padding: 10px;
+}
 
 .all {
       max-width: 600px;
@@ -18,107 +29,93 @@
       flex-direction: column;
       border-radius: 15px;
       border: 2px solid var(--titles);
+      overflow: hidden;
 }
 
-body{
-      background-color: var(--main-bg);
-}
-
-
-
-.icons {
-      display: inline-block;
-      padding: 10px;
+.head {
+      width: 100%;
+      padding: 15px;
+      display: flex;
       align-items: center;
-      margin-bottom: -20px;
-      margin-left: auto;
-      margin-right: 40px;
-      padding-top: 10px;
-      transform: translateY(8px);
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
 }
 
-.icons a{
-      margin-top: 10px;
-      margin-bottom: 0;
-      margin-right: 20px;
+header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
 }
 
-
-
-header{
-      padding: 5px 5px 0 10px;
-      max-width: 1000px;
-}
-
-header p{
-      font-size:  x-large;
+header p {
+      font-size: x-large;
       color: var(--titles);
-      transition: fill 0.3 ease;
-      display: inline;
-}
-
-.icons a svg,
-.icons a svg g,
-.icons a svg path {
-      fill: var(--titles) !important;
-      transition: fill 0.3 ease;
-}
-
-.icons a svg,
-.icons a svg g,
-.icons a:hover svg path 
- {
-      fill: #00a8ff !important;
-}
-
-svg{
-      width: 30px;
-      height: 30px;
-}
-
-.icons a{
-      margin: 5px;
-      text-decoration: none;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      display: inline-block;
 }
 
 header p .special {
       font-size: large;
 }
 
-
-.head{
-      max-width: 1000px;
-      width: 100%;
-      margin:10px 05px 0 0;
-      padding: 10px;
-      padding-top: 0;
+.icons {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      box-sizing: border-box;
+      gap: 10px;
+      flex-wrap: wrap;
 }
 
-header .title:hover ,
-.ps-title
-:hover{
+.icons a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      transition: transform 0.2s ease;
+}
+
+.icons a:hover {
+      transform: scale(1.1);
+}
+
+.icons a svg,
+.icons a svg g,
+.icons a svg path {
+      fill: var(--titles) !important;
+      transition: fill 0.3s ease;
+}
+
+.icons a:hover svg path {
+      fill: #00a8ff !important;
+}
+
+svg {
+      width: 28px;
+      height: 28px;
+}
+
+header .title:hover,
+.ps-title:hover {
       color: #00a8ff;
+      cursor: pointer;
 }
 
-hr{
+hr {
       border: none;
       border-top: 3px solid var(--titles);
-      margin: 20px 0;
+      margin: 15px 0;
       width: 100%;
       opacity: 0.5;
 }
 
-.about-me , .skills , .right-side , .card{
-      border: 3px var(--border) solid;
-      padding: 30px;
-      margin: 25px;
-      margin-top: 10px;
-      padding-bottom: 10px;
+.about-me,
+.skills,
+.right-side,
+.card {
+      border: 3px solid var(--border);
+      padding: 20px;
+      margin: 15px;
       border-radius: 15px;
       background-color: #001322;
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
@@ -127,94 +124,81 @@ hr{
 
 .about-me:hover,
 .skills:hover,
-.right-side,.card:hover {
+.card:hover {
       background-color: #00192a;
 }
 
 .lists {
       color: var(--text);
       list-style: none;
-      line-height: 1.4;
-      letter-spacing: 1.1;
       font-size: large;
 }
 
-.title,.ps-title {
+.lists li {
+      margin-bottom: 8px;
+}
+
+.title,
+.ps-title {
       color: var(--titles);
-      font-size: x-large ;
+      font-size: x-large;
 }
 
-.skills{
-      width: 300px;
-      height:fit-content ;
+.skills {
+      width: auto;
+      height: fit-content;
 }
 
-.about-me ul svg{
+.about-me ul svg {
       width: 25px;
       height: 25px;
 }
 
-.lang {
+.lang,
+.game,
+.ps-title {
       display: flex;
-      align-items: center ;
-      gap: 8px ;
-      margin-bottom: 5px;
+      align-items: center;
+      gap: 8px;
 }
 
 .flag-icon {
-      width: 24px ;
-      height: 24px ;
-      transform: none ;
-      display: inline-block ;
+      width: 24px;
+      height: 24px;
 }
 
-.ps-title{
-      padding: 30px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-}
-
-.rock{
-      width: 30px;
-      height: 30px;
+.rock {
+      width: 24px;
+      height: 24px;
       fill: var(--titles);
 }
 
-.rock:hover{
-      fill: #00a8ff;
-}
-
-.game{
-      display: flex;
-      align-items: center;
-      gap: 8px;
-}
-
-.controller{
+.controller {
       fill: var(--border);
 }
 
-.text{
+.text {
       color: var(--text);
-      letter-spacing: 1.5;
-      font-size:large;
+      font-size: large;
+      word-wrap: break-word;
 }
 
-.card .title{
-      display: block;
-      margin: 10px;
+.card .title {
+      margin-bottom: 10px;
 }
 
-.messi{
+.messi {
+      max-width: 100%;
       width: 300px;
-      height: 200px;
-      object-fit:contain;
+      height: auto;
+      display: block;
+      margin: 10px 0;
+      border-radius: 8px;
 }
 
-.card a{
-      color: var(--border);
-      display: inline;
+.card a {
+      color: #00a8ff;
+      text-decoration: underline;
 }
 
 .link {
@@ -222,30 +206,68 @@ hr{
 }
 
 .text .note {
-      color: var(--border);
-      font-size: x-large;
-}
-
-footer p{
-      color: var(--text);
-      padding: 10px 10px;
-      padding-top: 0;
+      color: #ff4a4a;
+      font-size: large;
 }
 
 .github-btn {
-      display: inline-block;
+      display: block;
       background-color: var(--border);
       color: #ffffff;
       padding: 14px 24px;
-      margin: 10px;
-      margin-left: 30px;
+      margin: 15px auto;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
       width: fit-content;
+      text-align: center;
       transition: background-color 0.3s ease;
 }
 
 .github-btn:hover {
-      background-color: #00192a;
+      background-color: #007EA7;
+}
+
+footer {
+      text-align: center;
+      margin-top: auto;
+}
+
+footer p {
+      color: var(--text);
+      padding: 15px;
+      font-size: small;
+}
+
+@media (max-width: 480px) {
+
+      .head,
+      header {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .icons {
+            justify-content: center;
+            margin: 0;
+      }
+
+      .about-me,
+      .skills,
+      .card {
+            padding: 15px;
+            margin: 10px;
+      }
+
+      .title,
+      .ps-title {
+            font-size: large;
+      }
+
+      .text,
+      .lists {
+            font-size: medium;
+      }
 }
