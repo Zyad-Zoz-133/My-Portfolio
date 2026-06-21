@@ -59,10 +59,6 @@ header p {
       display: inline-block;
 }
 
-header p .special {
-      font-size: large;
-}
-
 .icons {
       display: flex;
       align-items: center;
