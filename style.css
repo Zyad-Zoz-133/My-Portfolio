@@ -163,7 +163,7 @@ hr {
       gap: 8px;
 }
 
-.ps-title{
+.ps-title {
       padding: 20px;
       padding-bottom: 10px;
 }
@@ -193,7 +193,7 @@ hr {
       margin-bottom: 15px;
 }
 
-.card p{
+.card p {
       padding: 10px 0px;
 }
 
@@ -279,5 +279,9 @@ footer p {
       .text,
       .lists {
             font-size: medium;
+      }
+
+      .github-btn {
+            width: 80%;
       }
 }
